@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./libs/animate/animate.css">
+    <title>Websites</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Perfil</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/scripts/index.html">Inicio<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/img/galeria.html" class="animated slideOutRight infinite">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/estudios realizados.html">Estudios Realizados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/reclamos.html"> Reclamos</a>
+              </li>
+          </ul>
+        </nav>
+        <div>
+
+        </div>
+        <div class="form-contact"> 
+          <form action="enviar.php" method="post">
+            <fieldset>
+                <legend>Mi Formulario</legend>
+           <label for="">Nombre</label>
+            <input type="text" placeholder="Escribe tu nombre"required><br>
+            <label for="">Apellido</label>
+            <input type="text" placeholder="Escribe tu Apellido"required><br>
+            <label for="">C.C/RUT</label>
+            <input type="text" placeholder="Número"required><br>
+            <p>Tipo de Empresa</p>
+            <input name="Tipo de Empresa" type="radio"required>
+            <label for="">Empresa</label>
+            <input name="Tipo de Empresa" type="radio"required>
+            <label for="">Microempresa</label>
+            <br>
+            <br>
+            <label for="correo">Correo</label>
+            <input type="mail" name="correo" placeholder="Escribe tu e-mail" required><br> 
+            <label for="">Telefono</label>
+            <input type="number" placeholder="Telefono"required><br>
+            <textarea name="comentario" id="comentario" cols="30" rows="5"></textarea>
+            <br>
+            <input type="checkbox"required>
+            <label for="">Acepta los terminos y condiciones</label>
+            <br>
+            <br>
+            <input type="submit" value="Enviar"required>
+            <input type="reset" value="Borrar"required>
+            </fieldset>
+        </form>
+        </div>
+</body>
